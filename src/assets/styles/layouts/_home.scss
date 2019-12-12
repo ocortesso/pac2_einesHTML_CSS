@@ -1,18 +1,128 @@
 * {
   box-sizing: border-box;
 }
-
 body {
-  padding: 30px;
+  padding: 0;
   margin: 0;
   font-family: $font-family-sans-serif;
+}
+.poster {
+  width: 100%;
+  height: calcheight($navbar-height, 100vh);
+  background-image: url("../../assets/images/tots.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.poster-logo {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.poster-logo img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin-top: 1em;
+  
+  filter: drop-shadow(02px 04px 06px $verd-clar);
+  @include transition(filter .2s);
+
+  &:hover {
+    filter: drop-shadow(2px 4px 6px $negre);
+    @include transition(filter .2s);
+  }
+}
+
+.poster-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.poster-link {
+  position: relative;
+  display: block;
+  padding: .5em;
+  font-family: $font-title;
+  font-size: 2em;
+  color: $blanc;
+  text-align: center;
+  text-decoration: none;
+  background-color: $negre;
+  border: .1em solid $verd-clar;
+  
+  @include transition(transform .2s);
+
+  &:hover {
+    color: $blanc;
+    border: .1em solid $marro;
+    @include transform(scale(1.2));
+    @include transition(transform .2s);
+  }
+}
+
+@media (max-width: 990px) {
+  .poster-link {
+    font-size: 1.2em;
+  }
+  .poster {
+    background-position: right top;
+  }
 }
 
 @supports (display: grid) {
   .poster {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    grid-auto-rows: 80px;
+    grid-template-columns: repeat(5, 20%);
+    grid-auto-rows: 1fr;
     grid-auto-flow: dense;
+  }
+  .poster-logo {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  .poster-menu {
+    grid-column: 2/5;
+    grid-row: 3/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1em;
+  }
+  .poster-item:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .poster-item:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .poster-item:nth-child(3) {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  @media (max-width: 990px) {
+    .poster-logo {
+      grid-column: 2/5;
+      grid-row: 2;
+    }
+    .poster-menu {
+      grid-row: 5;
+    }
+    .poster-item:nth-child(1) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .poster-item:nth-child(2) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .poster-item:nth-child(3) {
+      grid-column: 3;
+      grid-row: 1;
+    }
   }
 }

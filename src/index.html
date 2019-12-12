@@ -4,33 +4,71 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="./assets/images/favicon-32x32.png" rel="Shortcut Icon">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva%7CMontserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>TAO - Web oficial</title>
   </head>
   <body>
-   <div class="poster">
-     <div class="poster__logo"><img src="#"></div>
-     <div class="poster__menu">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light text-right">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="./index.html">TAO</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./band.html">Banda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Biografia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>  
+  <div class="poster">
+    <div class="poster-logo"><a href="./index.html"><img src="./assets/images/logo-tao-codigo.png"></a></div>
+        <ul class="poster-menu">
+            <li class="poster-item">
+              <a class="poster-link" href="./band.html">Banda</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+            <li class="poster-item">
+              <a class="poster-link" href="#">Biografía</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+            <li class="poster-item">
+              <a class="poster-link" href="#">Contacto</a>
             </li>
           </ul>
-        </div>
-      </nav>
-     </div>
-   </div>
+  </div>
+<footer>
+    <nav class="navbar footer navbar-expand-lg navbar-dark bg-dark">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a  class="nav-link" href="https://facebook.com" target="_blank">
+                    <i class="row-icon fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link" href="https://instagram.com" target="_blank">
+                      <i class="row-icon fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link" href="#">
+                      <i class="row-icon fab fa-whatsapp"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link" href="#">
+                      <i class="row-icon fas fa-at"></i>
+                    </a>
+                </li>
+          </ul>
+      </nav>  
+</footer>
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

@@ -1,0 +1,10 @@
+@function ruleofthree($number,$total) {
+  $result: ($number / 100) * $total;
+	
+  @return $result;
+}
+@function calcheight($number,$total) {
+  $total: $total - ($number * 2);
+
+  @return $total;
+}

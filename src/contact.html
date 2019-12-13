@@ -21,7 +21,7 @@
       <a class="nav-link" href="./band.html">Banda</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Biografia</a>
+      <a class="nav-link" href="./bio.html">Biografia</a>
     </li>
     <li class="nav-item active">
       <a class="nav-link" href="./contact.html">Contacto</a>
@@ -32,40 +32,54 @@
 
 <div class="container">
   <!-- Content here -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+    </ol>
+  </nav>
   <h1 class="page-title">Contacto</h1>
-  <form id="contact-form" method="post" data-netlify="true"> 
+  <form class="formulario-contacto" method="post" data-netlify="true"> 
         <fieldset>
           <legend>Datos personales</legend>
             <div class="form-row">
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Nombre" name="nombre" required>
+                <input type="text" class="form-control formulario-contacto-input" placeholder="Nombre" name="nombre" required>
               </div>
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Apellidos" name="apellidos" required>
+                <input type="text" class="form-control formulario-contacto-input" placeholder="Apellidos" name="apellidos" required>
               </div>
             </div>
             <div class="form-row">
               <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="Correo electrónico" name="email" required>
+                <input type="email" class="form-control formulario-contacto-input" placeholder="Correo electrónico" name="email" required>
               </div>
               <div class="col-md-6">
-                <input type="tel" class="form-control" placeholder="Teléfono" name="telefono" pattern="[0-9]{9,}" required>
+                <input type="tel" class="form-control formulario-contacto-input" placeholder="Teléfono" name="telefono" pattern="[0-9]{9,}" required>
               </div>
             </div>
         </fieldset>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" name="rss" id="rss">
+        <fieldset>
+          <legend>Pregúntanos!</legend>
+            <div class="form-group">
+              <textarea class="form-control formulario-contacto-input" name="pregunta" placeholder="Escribe tu duda" rows="3"></textarea>
+            </div>
+        </fieldset>
+        
           <label class="form-check-label" for="rss">
             Quiero suscribirme a la newsletter
+          <input class="form-check-input formulario-contacto-input formulario-contacto-input--check" type="checkbox" value="" name="rss" id="rss">
+          <span class="checkmark"></span>
           </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" name="pdd" id="pdd" required>
+      
+        
           <label class="form-check-label" for="pdd">
-            Acepto la política de protección de datos                   
+            Acepto la política de protección de datos 
+          <input class="form-check-input formulario-contacto-input formulario-contacto-input--check" type="checkbox" value="" name="pdd" id="pdd" required>
+          <span class="checkmark"></span>                  
           </label>
-        </div>
-         <input type="submit" value="Envia" />
+       
+         <input class="formulario-contacto-submit" type="submit" value="Envía" />
       </form> 
 </div>
 <footer>

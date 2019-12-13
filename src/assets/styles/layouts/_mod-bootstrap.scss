@@ -2,6 +2,9 @@
   height: $navbar-height;
   border-bottom: .2em solid $verd-clar;
 }
+.navbar-dark .navbar-nav .nav-link {
+  color: $verd-clar;
+}
 footer .bg-dark {
   border-top: .2em solid $verd-clar;
   border-bottom: 0;
@@ -10,6 +13,22 @@ footer .bg-dark {
 .footer .navbar-nav .nav-link {
   font-size: 1.5em;
   color: $verd-clar;
+}
+
+.breadcrumb {
+  padding-top: 2em;
+  padding-left: 0;
+  background-color: transparent;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: .5em;
+  padding-left: .5em;
+}
+
+.form-control:focus {
+  border-color: $verd-clar;
+  box-shadow: 0 0 0 .2rem $verd-clar;
 }
 
 @media (max-width: 990px) {

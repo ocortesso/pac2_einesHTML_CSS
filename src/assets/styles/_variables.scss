@@ -1,14 +1,16 @@
 $font-title: "Bangers", cursive;
 $font-family-sans-serif: "Montserrat", sans-serif;
 $font-family-serif: "Georgia", "Times New Roman", serif;
-$negre: #000;
 $blanc: #fff;
+$negre: #000;
+$grisclar: #eee;
+$grisfosc: #ccc;
 $verd-clar: #43bf0d80;
-$blau-fost: #020873;
+$verd-fost: #184008;
 $marro: #80320f;
 $navbar-height: 8vh;
 
 $theme-colors: (
-  "primary": $blau-fost,
+  "primary": $verd-fost,
   "dark": $negre 
 );

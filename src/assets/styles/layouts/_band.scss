@@ -1,3 +1,49 @@
+.page-title {
+  padding-top: 1em;
+  font-family: $font-title;
+}
+.container {
+  min-height: calcheight($navbar-height, 100vh);
+}
 .band-members {
-  display: flex;
+  display: block;
+}
+.band-members-item {
+  display: inline-block;
+  width: 30%;
+  height: 70vh;
+}
+.band-members-image {
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.band-members-image.micky {
+  background-image: url("../../assets/images/micky.jpg");
+}
+.band-members-image.david {
+  background-image: url("../../assets/images/david.jpg");
+}
+.band-members-image.oscar {
+  background-image: url("../../assets/images/oscar.jpg");
+}
+
+@media (max-width: 670px) {
+  .band-members-item {
+    width: 100%;
+    height: auto;
+  }
+  .band-members-image {
+    height: 80vh;
+  }
+}
+
+@supports (display: flex) {
+  .band-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

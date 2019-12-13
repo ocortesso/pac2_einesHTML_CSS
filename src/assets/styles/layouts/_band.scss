@@ -2,9 +2,6 @@
   padding-top: 0;
   font-family: $font-title;
 }
-.container {
-  min-height: calcheight($navbar-height, 100vh);
-}
 .band-members {
   display: block;
 }
@@ -39,13 +36,13 @@
   }
 }
 
-.band-members-image.micky {
+.band-members-image--micky {
   background-image: url("../../assets/images/micky.jpg");
 }
-.band-members-image.david {
+.band-members-image--david {
   background-image: url("../../assets/images/david.jpg");
 }
-.band-members-image.oscar {
+.band-members-image--oscar {
   background-image: url("../../assets/images/oscar.jpg");
 }
 

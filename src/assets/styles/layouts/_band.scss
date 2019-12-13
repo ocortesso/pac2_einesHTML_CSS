@@ -5,12 +5,12 @@
 .band-members {
   display: block;
 }
-.band-members-item {
+.band-members--item {
   display: inline-block;
   width: 30%;
   height: 70vh;
 }
-.band-members-image {
+.band-members--image {
   position: relative;
   width: 100%;
   height: 50vh;
@@ -18,7 +18,7 @@
   background-position: center;
   background-size: cover;
 }
-.band-members-link {
+.band-members--link {
   position: absolute;
   display: table;
   width: 100%;
@@ -36,22 +36,22 @@
   }
 }
 
-.band-members-image--micky {
+.band-members--image-micky {
   background-image: url("../../assets/images/micky.jpg");
 }
-.band-members-image--david {
+.band-members--image-david {
   background-image: url("../../assets/images/david.jpg");
 }
-.band-members-image--oscar {
+.band-members--image-oscar {
   background-image: url("../../assets/images/oscar.jpg");
 }
 
 @media (max-width: 670px) {
-  .band-members-item {
+  .band-members--item {
     width: 100%;
     height: auto;
   }
-  .band-members-image {
+  .band-members--image {
     height: 80vh;
   }
 }
@@ -62,7 +62,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .band-members-link {
+  .band-members--link {
     display: flex;
     align-items: center;
     justify-content: center;
